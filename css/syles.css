@@ -1,0 +1,447 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+--grey: #F7F9F9;
+--blue: #2E86C1;
+--lightblue: #AED6F1;
+--darkgray: #333;
+--pink: #FFC0CB;
+--darkblue: #3B5998;
+--twitter: #55ACEE;
+--google: #dd4b39;
+--green: #04AA6D;
+--greenclean: #A9DFBF;
+--grey1: #f1f1f1;
+--grey2: #ccc;
+--white: #FDFEFE;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 30px;
+}
+
+.header{
+    background: var(--grey);
+    padding: 10px;
+    flex: 100%;
+}
+
+.navbar{
+    background: var(--grey);
+    padding: 10px;
+    flex: 100%;
+    height: 80px;
+}
+
+
+.icon-bar {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: var(--lightblue);
+    overflow: auto;
+    margin: 0;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+  
+.icon-bar a {
+    float: left;
+    width: 10%;
+    height: auto;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+  
+.icon-bar a:hover {
+    background-color: var(--blue);
+    height: auto;
+}
+  
+.active {
+    background-color: var(--blue);
+    height: auto;
+}
+
+.carrousel{
+    background: var(--lightblue);
+    padding: 10px;
+    flex: 100%; 
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: var(--darkgray);
+    padding: 10px;
+}
+
+.scroll-container {
+    display: flex;
+    height: 400px;
+}
+  
+.scroll-container img {
+    padding: 10px;
+    flex: 0 0 600px;
+    height: 100%; 
+}
+
+.content-e{
+    background: var(--grey);
+    padding: 10px;
+    flex: 50%; 
+}
+
+.container {
+    position: relative;
+    border-radius: 5px;
+    background-color: var(--grey);
+    padding: 20px 0 30px 0;
+} 
+  
+input, .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; 
+}
+  
+input:hover, .btn:hover {
+    opacity: 1;
+}
+  
+.fb {
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+  
+.twitter {
+    background-color: var(--twitter);
+    color: var(--white);
+}
+  
+.google {
+    background-color: var(--google);
+    color: var(--white);
+}
+  
+input[type=submit] {
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: var(--lightblue);
+}
+  
+.col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid var(--lightblue);
+    height: 175px;
+}
+  
+.vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--grey1);
+    border: 1px solid var(--grey2);
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+  
+.hide-md-lg {
+    display: none;
+}
+  
+.bottom-container {
+    text-align: center;
+    background-color: var(--blue);
+    border-radius: 0px 0px 4px 4px;
+}
+  
+.content-d{
+    background: var(--grey);
+    padding: 10px;
+    flex: 50%; 
+}
+
+.content-d h2{
+    font-family: minha-fonte;
+    text-align: center;
+    font-size: 35px;
+    color: var(--darkblue);
+}
+
+.content-d p{
+    font-family: minha-fonte;
+    font-size: 15px;
+    padding: 10px;
+    background-image: url('../img/background1.png');
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: minha-fonte;
+    src: url('../fonte/Quicksand-VariableFont_wght.ttf');
+}
+
+.img-1{
+    background: var(--grey);
+    padding: 10px;
+    flex: 25%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pedido-class .responsive {
+    flex: 1 0 21%;
+    margin: 5px;
+    display: flex;
+    height: 400px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.gallery {
+    width: 100%;
+    border: 3px solid transparent;
+    padding: 15px;
+    border-image: url('../img/border1.png') 30 round;
+}
+  
+.gallery:hover {
+    border-image: url('../img/border2.png') 30 round;
+}
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    height: auto;
+    margin-right: 10px;
+}
+  
+.desc {
+    display: flex;
+    padding: 15px;
+    justify-content: center; 
+    align-items: baseline;
+    text-align: center;
+    color: var(--blue);
+    font-family: minha-fonte;
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+.gallery {
+    position: relative;
+}
+
+.cart {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    background-color: var(--lightblue);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.price {
+    position: absolute;
+    top: 10px;
+    color: black;
+    font-size: 14px;
+    font-family: minha-fonte;
+    background-color: var(--lightblue);
+    border-radius: 25px;
+    padding: 4px;
+}
+
+.cart {
+    left: 10px;
+}
+
+.price {
+    right: 10px;
+}
+
+
+.img-2{
+    background: var(--grey);
+    padding: 10px;
+    flex: 25%; 
+    flex-direction: row;
+    height: auto;
+}
+
+.container-2 {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+}
+  
+.container-2 img {
+    vertical-align: middle;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+  
+.container-2 .content-2 {
+    position: absolute;
+
+}
+
+.container-2:hover .content-2:hover{
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 12px;
+    color: var(--grey);
+    bottom: 0;
+}
+
+.content-2 p{
+    font-family: minha-fonte;
+    font-size: 12px;
+}
+
+.img-3{
+    background: var(--grey);
+    padding: 10px;
+    flex: 25%; 
+    flex-direction: row;
+}
+
+.container-3{
+    width: 600%;
+    height: auto;
+    max-width: 300px;
+}
+
+.container-3 h3{
+    font-family: minha-fonte;
+    font-size: 20px;
+    color: var(--blue);
+}
+
+.container-3 p{
+    font-family: minha-fonte;
+    font-size: 15px;
+    color: var(--lightblue);
+}
+
+.container-3 img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.img-4{
+    background: var(--grey);
+    padding: 10px;
+    flex: 25%; 
+    flex-direction: row;
+}
+
+.img-4 img{
+    width: 300px;
+    height: auto;
+}
+
+.img-4:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.img-4 p{
+    font-family: minha-fonte;
+    font-size: 15px;
+    color: var(--darkblue);
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.footer{
+    background: var(--grey);
+    padding: 10px;
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+
+.icon-link {
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media (max-width: 800px){
+    .content, .header, .navbar, .footer, .flex-container, .content-e, .content-d, .img-1.img-2, .img-3, .img-4, .icon-bar {
+        flex: 100%;
+    }
+    .scroll-container, .scroll-container img, .carrousel, .container, input, .btn, .fb, .twitter, .google {
+        flex: 100%;
+    }
+    .row:after, .vl, .vl-innertext, .bottom-container, input[type=submit], .col, .pedido-class .responsive, .gallery, .cart, .price {
+        flex: 100%;
+    }
+    .container-2, .container-2 img, .container-2:hover .content-2:hover, .content-2 p, .container-3, .container-3 p, .container-3 img:hover {
+        flex: 100%;
+    }
+    .img-4 img, .img-4:hover, .img-4 p, .icon-link {
+        flex: 100%;
+    }
+}
